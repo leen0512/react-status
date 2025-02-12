@@ -3,6 +3,8 @@ import './App.css';
 import { useState } from 'react';
 import TextChanger from './components/TextChanger';
 import ChangeDivColor from './components/DivColorChanging';
+import DisplayInput from './components/DisplayInput';
+import ShowHideText from './components/ShowHideText';
 
 //q1
 function ShowNumber(){
@@ -50,6 +52,8 @@ function App() {
       <ShowLikes title="Increase Likes"></ShowLikes>
       <TextChanger/>
       <ChangeDivColor/>
+      <DisplayInput/>
+      <ShowHideText/>
     </div>
   );
 }
