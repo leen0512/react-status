@@ -14,6 +14,7 @@ function IncreaseOrDecreaseTextSize(){
         </div>
         <button onClick={increaseSize}>Click Here to Increase Text Size</button>
         <button onClick={() => setSize(size-1)}>Click Here to Decrease Text Size</button>
+        <hr></hr>
     </div>
 }
 

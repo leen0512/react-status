@@ -8,7 +8,7 @@ import ShowHideText from './components/ShowHideText';
 import AddInputToList from './components/AddInputToList';
 import Toggle from './components/Toggle';
 import IncreaseOrDecreaseTextSize from './components/IncreaseOrDecreaseTextSize';
-
+import DisplayRandomNumber from './components/DisplayRandomNumber';
 
 //q1
 function ShowNumber(){
@@ -64,6 +64,7 @@ function App() {
       <AddInputToList/>
       <Toggle/>
       <IncreaseOrDecreaseTextSize/>
+      <DisplayRandomNumber/>
     </div>
   );
 }
