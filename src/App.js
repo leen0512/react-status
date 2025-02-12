@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 import TextChanger from './components/TextChanger';
+import ChangeDivColor from './components/DivColorChanging';
 
 //q1
 function ShowNumber(){
@@ -48,6 +49,7 @@ function App() {
       <ChgDivColor title="Change Div Color"></ChgDivColor>
       <ShowLikes title="Increase Likes"></ShowLikes>
       <TextChanger/>
+      <ChangeDivColor/>
     </div>
   );
 }
