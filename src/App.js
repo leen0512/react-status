@@ -1,15 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import { useState } from 'react';
-import TextChanger from './components/TextChanger';
-import ChangeDivColor from './components/DivColorChanging';
-import DisplayInput from './components/DisplayInput';
-import ShowHideText from './components/ShowHideText';
-import AddInputToList from './components/AddInputToList';
-import Toggle from './components/Toggle';
-import IncreaseOrDecreaseTextSize from './components/IncreaseOrDecreaseTextSize';
-import DisplayRandomNumber from './components/DisplayRandomNumber';
-import UseEffect from './components/UseEffect';
+import { use, useState } from 'react';
+import TextChanger from './components/state/TextChanger';
+import ChangeDivColor from './components/state/DivColorChanging';
+import DisplayInput from './components/state/DisplayInput';
+import ShowHideText from './components/state/ShowHideText';
+import AddInputToList from './components/state/AddInputToList';
+import Toggle from './components/state/Toggle';
+import IncreaseOrDecreaseTextSize from './components/state/IncreaseOrDecreaseTextSize';
+import DisplayRandomNumber from './components/state/DisplayRandomNumber';
+import UseEffect1 from './components/useEffect/q1';
+import UseEffect2 from './components/useEffect/q2';
+import UseEffect3 from './components/useEffect/q3';
+import UseEffect4 from './components/useEffect/q4';
 
 //q1
 function ShowNumber(){
@@ -55,6 +58,14 @@ function ShowLikes(){
 function App() {
   const [count, setCount] = useState(1);
   const [triggerEffect, settriggereffect] = useState(true);
+  
+  const [color, setColor] = useState('blue');
+
+  const [text,setText] = useState('hello');
+
+  const [status, setStatus] = useState('status1');
+  const [color2, setColor2] = useState('pink');
+
   return (
     <div className="App">
       <ShowNumber title="Increase Number"></ShowNumber>
@@ -72,8 +83,19 @@ function App() {
       <button onClick={() => setCount(count+1)}>Click Here to Increase Count</button>
       <h1>{count}</h1>
       <button onClick={() => settriggereffect(!triggerEffect)}>Click Here to Use Trigger Effect</button>
+      <UseEffect1 triggerEffect={triggerEffect} count={count} />
+    
+      <button onClick={() => setColor('gray')}>Set Color to Gray</button>
+      <UseEffect2  color={color}></UseEffect2>
 
-      <UseEffect triggerEffect={triggerEffect} count={count} />
+      <button onClick={() => setText('Hello Again!')}>Change Text</button>
+      <UseEffect3 text={text}></UseEffect3>
+
+      <button onClick={() => 
+        {setStatus('status2')
+          setColor2('lightblue')
+        }}>Click Here to Change Color and Status</button>
+      <UseEffect4 status={status} color={color2}></UseEffect4>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-function UseEffect(props){
+function UseEffect1(props){
     useEffect(() => {
         console.log('rendering')
     }, []);
@@ -9,7 +9,8 @@ function UseEffect(props){
         console.log('trigger use effect prop was changed')
     }, [props.triggerEffect]);
 
-    return <div><h1>hello world</h1></div>
+    return <div><h1>hello world</h1>
+    <hr></hr></div>
 }
 
-export default UseEffect;
+export default UseEffect1;
