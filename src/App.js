@@ -15,6 +15,7 @@ import UseEffect3 from './components/useEffect/q3';
 import UseEffect4 from './components/useEffect/q4';
 import UseEffect5 from './components/useEffect/q5';
 import UseEffect6 from './components/useEffect/q6';
+import UseEffect7 from './components/useEffect/q7';
 
 //q1
 function ShowNumber(){
@@ -71,6 +72,14 @@ function App() {
   const [value, setValue] = useState('');
 
   const [mode, setMode] = useState('mode 1');
+  
+  const [number, setNumber] = useState(10);
+  function handleClick() {
+    setTimeout(() => {
+        setNumber(number + 10); 
+        setNumber(number + 10); 
+    }, 1000);
+}
 
   return (
     <div className="App">
@@ -108,6 +117,9 @@ function App() {
 
       <button onClick={() => setMode("mode changed")}>Click Here to Change mode</button>
       <UseEffect6 mode={mode}></UseEffect6>
+
+      <button onClick={handleClick}>Click Here to Increase number by 10 twice</button>
+      <UseEffect7 number={number}></UseEffect7>
     </div>
   );
 }
