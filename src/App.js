@@ -16,6 +16,7 @@ import UseEffect4 from './components/useEffect/q4';
 import UseEffect5 from './components/useEffect/q5';
 import UseEffect6 from './components/useEffect/q6';
 import UseEffect7 from './components/useEffect/q7';
+import PostList from './components/axios/example';
 
 //q1
 function ShowNumber(){
@@ -120,6 +121,8 @@ function App() {
 
       <button onClick={handleClick}>Click Here to Increase number by 10 twice</button>
       <UseEffect7 number={number}></UseEffect7>
+        
+      <PostList></PostList>
     </div>
   );
 }
