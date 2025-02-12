@@ -28,6 +28,17 @@ function ChgDivColor(){
 }
 
 
+//q3
+function ShowLikes(){
+  const [likes, setLikes] = useState(0);
+  function IncreaseLikes(){
+    setLikes(likes+1);
+  }
+  return <div>
+    <h1>{likes}</h1>
+    <button onClick={IncreaseLikes}>Click Here to Increase Likes</button>
+  </div>
+}
 
 function App() {
   return (
