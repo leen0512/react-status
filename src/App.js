@@ -7,6 +7,8 @@ import DisplayInput from './components/DisplayInput';
 import ShowHideText from './components/ShowHideText';
 import AddInputToList from './components/AddInputToList';
 import Toggle from './components/Toggle';
+import IncreaseOrDecreaseTextSize from './components/IncreaseOrDecreaseTextSize';
+
 
 //q1
 function ShowNumber(){
@@ -61,6 +63,7 @@ function App() {
       <ShowHideText/>
       <AddInputToList/>
       <Toggle/>
+      <IncreaseOrDecreaseTextSize/>
     </div>
   );
 }
