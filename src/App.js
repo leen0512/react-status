@@ -17,13 +17,13 @@ function ShowNumber(){
 
 //q2
 function ChgDivColor(){
-  const [IsRosybrown, setIsRosybrown] = useState(false);
+  const [isRosybrown, setisRosybrown] = useState(false);
 
   return (
     <div>
-  <div style={{backgroundColor:IsRosybrown? 'rosybrown' : 'lightblue',width:'100px', height:'100px'}}></div>
-  <button onClick={setIsRosybrown}>Click Here to Change Div Color</button>
-  </div>
+  <div style={{backgroundColor:isRosybrown? 'rosybrown' : 'lightblue',width:'100px', height:'100px'}}></div>
+  <button onClick={() => setisRosybrown(!isRosybrown)}>Click Here to Change Div Color</button>
+  </div>                                              
 );
 }
 
