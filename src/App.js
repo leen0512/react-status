@@ -5,6 +5,7 @@ import TextChanger from './components/TextChanger';
 import ChangeDivColor from './components/DivColorChanging';
 import DisplayInput from './components/DisplayInput';
 import ShowHideText from './components/ShowHideText';
+import AddInputToList from './components/AddInputToList';
 
 //q1
 function ShowNumber(){
@@ -54,6 +55,7 @@ function App() {
       <ChangeDivColor/>
       <DisplayInput/>
       <ShowHideText/>
+      <AddInputToList/>
     </div>
   );
 }
