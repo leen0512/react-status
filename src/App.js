@@ -9,6 +9,7 @@ import AddInputToList from './components/AddInputToList';
 import Toggle from './components/Toggle';
 import IncreaseOrDecreaseTextSize from './components/IncreaseOrDecreaseTextSize';
 import DisplayRandomNumber from './components/DisplayRandomNumber';
+import UseEffect from './components/UseEffect';
 
 //q1
 function ShowNumber(){
@@ -52,6 +53,8 @@ function ShowLikes(){
 }
 
 function App() {
+  const [count, setCount] = useState(1);
+  const [triggerEffect, settriggereffect] = useState(true);
   return (
     <div className="App">
       <ShowNumber title="Increase Number"></ShowNumber>
@@ -65,6 +68,12 @@ function App() {
       <Toggle/>
       <IncreaseOrDecreaseTextSize/>
       <DisplayRandomNumber/>
+
+      <button onClick={() => setCount(count+1)}>Click Here to Increase Count</button>
+      <h1>{count}</h1>
+      <button onClick={() => settriggereffect(!triggerEffect)}>Click Here to Use Trigger Effect</button>
+
+      <UseEffect triggerEffect={triggerEffect} count={count} />
     </div>
   );
 }
