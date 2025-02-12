@@ -6,6 +6,7 @@ import ChangeDivColor from './components/DivColorChanging';
 import DisplayInput from './components/DisplayInput';
 import ShowHideText from './components/ShowHideText';
 import AddInputToList from './components/AddInputToList';
+import Toggle from './components/Toggle';
 
 //q1
 function ShowNumber(){
@@ -16,6 +17,7 @@ function ShowNumber(){
   return <div>
     <h1>{count}</h1>
     <button onClick={IncreaseNumber}>Click Here to Increase Number</button>
+    <hr></hr>
   </div>
 }
 
@@ -28,6 +30,7 @@ function ChgDivColor(){
     <div>
   <div style={{backgroundColor:isRosybrown? 'rosybrown' : 'lightblue',width:'100px', height:'100px'}}></div>
   <button onClick={() => setisRosybrown(!isRosybrown)}>Click Here to Change Div Color</button>
+  <hr></hr>
   </div>                                              
 );
 }
@@ -42,6 +45,7 @@ function ShowLikes(){
   return <div>
     <h1>{likes}</h1>
     <button onClick={IncreaseLikes}>Click Here to Increase Likes</button>
+    <hr></hr>
   </div>
 }
 
@@ -56,6 +60,7 @@ function App() {
       <DisplayInput/>
       <ShowHideText/>
       <AddInputToList/>
+      <Toggle/>
     </div>
   );
 }

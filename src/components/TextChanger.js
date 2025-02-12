@@ -7,6 +7,7 @@ function TextChanger() {
     <div>
       <h1>{isHello ? "Hello" : "Goodbye"}</h1>
       <button onClick={() => setIsHello(!isHello)}>Click to Change Text</button>
+      <hr></hr>
     </div>
   );
 }

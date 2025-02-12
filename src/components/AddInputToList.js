@@ -16,6 +16,7 @@ function AddInputToList(){
         <input onChange={handleInputChange}></input>
         {mylist.map(item => <h1>{item}</h1>)}
         <button onClick={addToList}>Click Here to Add Input to List</button>
+        <hr></hr>
     </div>
 }
 

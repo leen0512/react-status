@@ -9,6 +9,7 @@ const DisplayInput = () =>{
     return <div>
         <input onChange={handleInputChange} placeholder="Type Something..."></input>
         <h1>{input}</h1>
+        <hr></hr>
     </div>
 }
 

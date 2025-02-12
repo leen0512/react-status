@@ -6,6 +6,7 @@ function ShowHideText() {
     return <div>
         <button onClick={() => setIsHidden(!isHidden)}>Click Here to Show or Hide Text</button>
         <p style={{visibility: isHidden? "hidden" : "visible"}}>Helllo</p>
+        <hr></hr>
     </div>
 }
 
