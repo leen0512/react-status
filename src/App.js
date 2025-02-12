@@ -15,31 +15,6 @@ function ShowNumber(){
 }
 
 
-//q2
-function ChgDivColor(){
-  const [IsRosybrown, setIsRosybrown] = useState(false);
-
-  return (
-    <div>
-  <div style={{backgroundColor:IsRosybrown? 'rosybrown' : 'lightblue',width:'100px', height:'100px'}}></div>
-  <button onClick={setIsRosybrown}>Click Here to Change Div Color</button>
-  </div>
-);
-}
-
-
-//q3
-function ShowLikes(){
-  const [likes, setLikes] = useState(0);
-  function IncreaseLikes(){
-    setLikes(likes+1);
-  }
-  return <div>
-    <h1>{likes}</h1>
-    <button onClick={IncreaseLikes}>Click Here to Increase Likes</button>
-  </div>
-}
-
 function App() {
   return (
     <div className="App">
