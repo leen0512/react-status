@@ -11,6 +11,7 @@ function UseEffect5(props){
 
     return <div>
         <h2>{props.value}</h2>
+        <hr></hr>
     </div>
 }
 

@@ -14,6 +14,7 @@ import UseEffect2 from './components/useEffect/q2';
 import UseEffect3 from './components/useEffect/q3';
 import UseEffect4 from './components/useEffect/q4';
 import UseEffect5 from './components/useEffect/q5';
+import UseEffect6 from './components/useEffect/q6';
 
 //q1
 function ShowNumber(){
@@ -69,6 +70,8 @@ function App() {
 
   const [value, setValue] = useState('');
 
+  const [mode, setMode] = useState('mode 1');
+
   return (
     <div className="App">
       <ShowNumber title="Increase Number"></ShowNumber>
@@ -100,8 +103,11 @@ function App() {
         }}>Click Here to Change Color and Status</button>
       <UseEffect4 status={status} color={color2}></UseEffect4>
     
-      <button onClick={() => setValue("changed")}>Click Here to Change Value</button>
+      <button onClick={() => setValue("value changed")}>Click Here to Change Value</button>
       <UseEffect5 value={value}></UseEffect5>
+
+      <button onClick={() => setMode("mode changed")}>Click Here to Change mode</button>
+      <UseEffect6 mode={mode}></UseEffect6>
     </div>
   );
 }
