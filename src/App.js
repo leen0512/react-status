@@ -17,6 +17,7 @@ import UseEffect5 from './components/useEffect/q5';
 import UseEffect6 from './components/useEffect/q6';
 import UseEffect7 from './components/useEffect/q7';
 import PostList from './components/axios/example';
+import UsersList from './components/axios/q1';
 
 //q1
 function ShowNumber(){
@@ -119,10 +120,16 @@ function App() {
       <button onClick={() => setMode("mode changed")}>Click Here to Change mode</button>
       <UseEffect6 mode={mode}></UseEffect6>
 
+
+
+
       <button onClick={handleClick}>Click Here to Increase number by 10 twice</button>
       <UseEffect7 number={number}></UseEffect7>
         
-      <PostList></PostList>
+      {/* <PostList></PostList> */}
+
+      <button>Click Here to Display Full Data</button>
+      <UsersList></UsersList>
     </div>
   );
 }
